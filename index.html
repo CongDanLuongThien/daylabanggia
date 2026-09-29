@@ -15,40 +15,20 @@ body{background:linear-gradient(160deg,var(--bg1),var(--bg2));background-attachm
 h1{text-align:center;font-size:2.5rem;line-height:.95;margin:22px 0 8px;color:var(--r2);text-transform:uppercase;text-shadow:3px 3px 0 var(--p2)}
 .sub{text-align:center;color:var(--r1);font-size:.82rem;font-style:italic;margin-bottom:18px}
 .sec{margin-bottom:20px;position:relative}
-.st{font-size:.95rem;letter-spacing:.3px;display:inline-block;background:var(--r1);color:#fff;font-size:1rem;padding:7px 18px;border-radius:999px;box-shadow:0 3px 0 var(--r2);margin-bottom:10px;max-width:calc(100% - 34px)}
+.st{letter-spacing:.3px;display:inline-block;background:var(--r1);color:#fff;font-size:1rem;padding:7px 18px;border-radius:999px;box-shadow:0 3px 0 var(--r2);margin-bottom:10px;max-width:100%}
 .box{background:var(--p1);border:1.5px dashed var(--r1);border-radius:14px;padding:4px 16px}
 .row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px dashed rgba(200,30,58,.3);cursor:pointer}
 .row:last-child{border:none}.row .b{color:var(--r1)}
-.lb{flex:1;font-weight:600;outline:none}
-.x{color:var(--r1);cursor:pointer;padding:2px 6px;display:none}
-.edit .x{display:inline}.edit .ed-only{display:inline-block}.ed-only{display:none}
-.edit .row{cursor:default}
-.gd{position:absolute;top:4px;right:0}
-.ghost{display:none;margin:8px auto 0;background:transparent;border:1.5px dashed var(--r1);color:var(--r1);border-radius:10px;padding:6px 14px;font-size:.85rem;cursor:pointer}
-.edit .ghost{display:block}
-.edit [contenteditable=true]{outline:1px dashed rgba(200,30,58,.5);border-radius:4px;padding:0 3px}
+.lb{flex:1;font-weight:600}
 .foot{text-align:center;margin-top:18px;color:var(--r1);font-size:.8rem}
 .dt{text-align:center;text-transform:uppercase;letter-spacing:.5px;color:var(--r2);font-size:1.35rem;margin:30px 0 12px}
-.pt{min-height:150px;max-height:300px;overflow:auto;line-height:1.55;white-space:pre-wrap;outline:none;padding:4px 2px}
+.pt{min-height:150px;max-height:300px;overflow:auto;line-height:1.55;white-space:pre-wrap;padding:4px 2px}
 .pg img{max-width:100%;border-radius:10px;margin-top:10px;border:1.5px solid var(--r1);display:block}
 .nav{background:var(--r1);color:#fff;border:none;width:34px;height:34px;border-radius:50%;font-size:1.1rem;cursor:pointer;box-shadow:0 3px 0 var(--r2)}
 .nav:disabled{opacity:.35}
 .back{position:absolute;top:14px;left:38px;z-index:3}
 .ctl{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:16px}
 .dots{display:flex;gap:6px}.dots i{width:7px;height:7px;border-radius:50%;background:var(--p2)}.dots i.on{background:var(--r1)}
-.acts{display:none;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:14px}
-.edit .acts{display:flex}
-.acts button,.tb button,.ov button{font:inherit;cursor:pointer}
-.acts button{background:var(--p1);border:1.5px dashed var(--r1);color:var(--r2);border-radius:10px;padding:6px 11px;font-size:.8rem}
-.tb{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}
-.tb button,.ov .pri{background:var(--r2);color:#fff;border:none;border-radius:999px;padding:8px 15px;font-size:.82rem;box-shadow:0 3px 0 #8f1327}
-.st2{text-align:center;font-size:.75rem;margin-top:10px;color:var(--r1);min-height:1em}
-.ov{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}
-.ov .bx{background:var(--paper);color:var(--ink);border-radius:14px;padding:18px;max-width:560px;width:100%}
-.ov textarea{width:100%;height:210px;font:.72rem monospace;background:#fff;color:#222;border:1px solid var(--r1);border-radius:8px}
-.ov .r{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
-.ov .sec2{background:var(--p1);color:var(--r2);border:1.5px dashed var(--r1);border-radius:999px;padding:8px 14px;font-size:.82rem}
-
 body{background-image:radial-gradient(rgba(200,30,58,.13) 2px,transparent 2.6px),linear-gradient(160deg,var(--bg1),var(--bg2));background-size:24px 24px,auto}
 .rings{position:absolute;left:-2px;top:44px;bottom:44px;width:30px;display:flex;flex-direction:column;justify-content:space-between;z-index:5}
 .rings i{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#e3b7bd,#c98a92);border:2px solid #a8636c;box-shadow:inset 0 2px 3px rgba(255,255,255,.6),0 2px 4px rgba(0,0,0,.25);position:relative}
@@ -60,107 +40,51 @@ body{background-image:radial-gradient(rgba(200,30,58,.13) 2px,transparent 2.6px)
 .deco .f1{top:-14px;right:-14px;transform:rotate(15deg)}.deco .f2{bottom:-16px;right:-12px;width:64px;height:64px}
 .deco .f3{bottom:-14px;left:26px;width:44px;height:44px;opacity:.6}
 .deco .stt{position:absolute;top:70px;right:16px;width:22px;height:22px}
-.sec,.row,.pg,.ctl,.acts,h1,.sub,.foot,.dt,.ghost{position:relative;z-index:2}
+.sec,.row,.pg,.ctl,h1,.sub,.foot,.dt{position:relative;z-index:2}
 .box{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36'%3E%3Cpath d='M18 22 C9 15 12 9 18 13 C24 9 27 15 18 22Z' fill='%23e94057' fill-opacity='.09'/%3E%3Ccircle cx='0' cy='0' r='2' fill='%23e94057' fill-opacity='.12'/%3E%3Ccircle cx='36' cy='36' r='2' fill='%23e94057' fill-opacity='.12'/%3E%3C/svg%3E")}
 .dv{display:flex;align-items:center;gap:8px;margin:0 0 16px;opacity:.85;position:relative;z-index:2}
 .dv::before,.dv::after{content:"";flex:1;height:0;border-top:2px dotted var(--r1)}
 .dv svg{width:22px;height:22px}
-.st::before{content:none}
 </style></head><body>
 <div class="nb">
  <div class="rings"><i></i><i></i><i></i><i></i><i></i><i></i></div>
  <div id="cover" class="sheet on"></div>
  <div id="detail" class="sheet"></div>
- <div class="tb">
-  <button id="bEdit">✏️ Chỉnh sửa</button>
-  <button id="bSave">💾 Lưu</button>
-  <button id="bBk">📋 Sao lưu / Nhập</button>
-  <button id="bPub">⬇️ Tải bản để đăng</button>
- </div>
- <div class="st2" id="status"></div>
 </div>
-<div class="ov" id="ov"><div class="bx">
- <b>Sao lưu dữ liệu (JSON)</b>
- <p style="font-size:.8rem;margin:6px 0">Sao chép để lưu lại, hoặc dán JSON vào rồi bấm “Nhập”.</p>
- <textarea id="ta"></textarea>
- <div class="r"><button class="pri" id="bCopy">Sao chép</button><button class="pri" id="bImp">Nhập</button><button class="sec2" id="bReset">Khôi phục mặc định</button><button class="sec2" id="bClose">Đóng</button></div>
-</div></div>
-<script id="app">
-const KEY='shop-notebook-v1';
-/*DEF_START*/const DEF={"v": 1, "title": "BẢNG GIÁ & QUY ĐỊNH", "sub": "— cập nhật dịch vụ & quy định —", "foot": "Cảm ơn bạn đã ủng hộ ♥", "groups": [{"title": "Dịch vụ của sốp:", "items": [{"label": "Lấy raw Zhihu và Lofter", "pages": [{"text": "1. Zhihu:\n- Lấy raw các loại link khác nhau: 3k/link.\n- Cứ mỗi link tính một lượt lấy truyện, đối với những truyện có nhiều chương thì mỗi chương tính 1 lượt.\n- Không nhận lấy những truyện có ngày đăng quá mới.", "img": ""}, {"text": "2. Lofter:\n- Lấy raw các loại link khác nhau: 7k/link.\n- Chỉ nhận lấy những truyện trong chuyên khu tinh tuyển.\n- Chỉ lấy lần lượt từng link và tính phí nhân lên, không lấy hết toàn bộ bộ sưu tập.\n\n- Truyện Lofter gồm nội dung công khai và trứng màu, trong đó phí lấy nội dung công khai 1k, phí lấy trứng màu 6k.", "img": ""}]}, {"label": "Dịch video hộ (lồng tiếng/vietsub)", "pages": [{"text": "1. Dịch video hộ (vietsub/lồng tiếng):\n- Video vietsub giá 4k/phút.\n- Video lồng tiếng giá 6k/ phút.\n- Chỉ nhận edit và dịch video, không hỗ trợ chèn logo, che sub,...\n- Toàn bộ đều làm thủ công nên có thể yêu cầu font chữ và màu chữ edit.", "img": ""}]}]}, {"title": "Quy định giao dịch:", "items": [{"label": "Chỉ nhận file sau khi thanh toán", "pages": [{"text": "- Chỉ nhận file sau khi thanh toán.\n- Bạn gửi link truyện/ video trước, mình tính toán phí rồi thông báo, bạn thanh toán, mình trả file truyện/video.\n- Có thể chuyển khoản trước nếu như bạn vội (đối với khách quen), mình sẽ check và trả kết quả sau, trường hợp không thể lấy raw hay không thể dịch, mình sẽ chủ động hoàn cho bạn", "img": ""}]}, {"label": "Hoàn tiền khi xảy ra vấn đề", "pages": [{"text": "- Bởi vì các app của Trung thay đổi code và thuật toán liên tục nên mình cũng không thể đảm bảo theo kịp, vì vậy khó tránh khỏi sai sót.\n- Mình sẽ hoàn trả nguyên vẹn trong những trường hợp sau:\n+ Thiếu text so với bản gốc.\n+ Text trong file lộn xộn không rõ.\n- Trường hợp bạn không còn nhu cầu, sốp sẽ không hoàn trả nhé.", "img": ""}]}, {"label": "Online từ 18h – 24h", "pages": [{"text": "- Mình thường online từ khung giờ 18h-24h.\n- Sẽ trả file trong khoảng thời gian này.\n- Trường hợp trả kết quả ngoài thời gian nêu trên là ngẫu nhiên, đôi khi rảnh thì mình sẽ vào check tin nhắn.\n- Đừng hối nhé, vì mình check tin nhắn từ dưới lên, nếu bạn nhắn tiếp thì tin nhắn sẽ hiện lên trên cùng, dẫn tới có kết quả sau cùng nè.", "img": ""}]}]}, {"title": "Phương thức thanh toán:", "items": [{"label": "Mã QR ở đây", "pages": [{"text": "- Chuyển khoản đồng thời chụp màn hình giao dịch gửi qua để mình có thể check nha.\n- Không cần ghi chú khi chuyển khoản.\n- Không nhận chuyển tiền điện thoại, tiền mặt,...", "img": ""}]}]}]};/*DEF_END*/
-let S,edit=false,cur=null,pi=0,timer;
+<script>
+const S={"title": "BẢNG GIÁ & QUY ĐỊNH", "sub": "— cập nhật dịch vụ & quy định —", "foot": "Cảm ơn bạn đã ủng hộ ♥", "groups": [{"title": "Dịch vụ của sốp:", "items": [{"label": "Lấy raw Zhihu và Lofter", "pages": [{"text": "1. Zhihu:\n- Lấy raw các loại link khác nhau: 3k/link.\n- Cứ mỗi link tính một lượt lấy truyện, đối với những truyện có nhiều chương thì mỗi chương tính 1 lượt.\n- Không nhận lấy những truyện có ngày đăng quá mới.", "img": ""}, {"text": "2. Lofter:\n- Lấy raw các loại link khác nhau: 7k/link.\n- Chỉ nhận lấy những truyện trong chuyên khu tinh tuyển.\n- Chỉ lấy lần lượt từng link và tính phí nhân lên, không lấy hết toàn bộ bộ sưu tập.\n\n- Truyện Lofter gồm nội dung công khai và trứng màu, trong đó phí lấy nội dung công khai 1k, phí lấy trứng màu 6k.", "img": ""}]}, {"label": "Dịch video hộ (lồng tiếng/vietsub)", "pages": [{"text": "1. Dịch video hộ (vietsub/lồng tiếng):\n- Video vietsub giá 4k/phút.\n- Video lồng tiếng giá 6k/ phút.\n- Chỉ nhận edit và dịch video, không hỗ trợ chèn logo, che sub,...\n- Toàn bộ đều làm thủ công nên có thể yêu cầu font chữ và màu chữ edit.", "img": ""}]}]}, {"title": "Quy định giao dịch:", "items": [{"label": "Chỉ nhận file sau khi thanh toán", "pages": [{"text": "- Chỉ nhận file sau khi thanh toán.\n- Bạn gửi link truyện/ video trước, mình tính toán phí rồi thông báo, bạn thanh toán, mình trả file truyện/video.\n- Có thể chuyển khoản trước nếu như bạn vội (đối với khách quen), mình sẽ check và trả kết quả sau, trường hợp không thể lấy raw hay không thể dịch, mình sẽ chủ động hoàn cho bạn", "img": ""}]}, {"label": "Hoàn tiền khi xảy ra vấn đề", "pages": [{"text": "- Bởi vì các app của Trung thay đổi code và thuật toán liên tục nên mình cũng không thể đảm bảo theo kịp, vì vậy khó tránh khỏi sai sót.\n- Mình sẽ hoàn trả nguyên vẹn trong những trường hợp sau:\n+ Thiếu text so với bản gốc.\n+ Text trong file lộn xộn không rõ.\n- Trường hợp bạn không còn nhu cầu, sốp sẽ không hoàn trả nhé.", "img": ""}]}, {"label": "Online từ 18h – 24h", "pages": [{"text": "- Mình thường online từ khung giờ 18h-24h.\n- Sẽ trả file trong khoảng thời gian này.\n- Trường hợp trả kết quả ngoài thời gian nêu trên là ngẫu nhiên, đôi khi rảnh thì mình sẽ vào check tin nhắn.\n- Đừng hối nhé, vì mình check tin nhắn từ dưới lên, nếu bạn nhắn tiếp thì tin nhắn sẽ hiện lên trên cùng, dẫn tới có kết quả sau cùng nè.", "img": ""}]}]}, {"title": "Phương thức thanh toán:", "items": [{"label": "Mã QR ở đây", "pages": [{"text": "- Chuyển khoản đồng thời chụp màn hình giao dịch gửi qua để mình có thể check nha.\n- Không cần ghi chú khi chuyển khoản.\n- Không nhận chuyển tiền điện thoại, tiền mặt,...", "img": ""}]}]}]};
+let cur=null,pi=0;
 const FL='<svg viewBox="0 0 40 40"><g style="fill:var(--r1)"><circle cx="20" cy="9" r="7"/><circle cx="31" cy="20" r="7"/><circle cx="20" cy="31" r="7"/><circle cx="9" cy="20" r="7"/></g><circle cx="20" cy="20" r="6" fill="#f6c15c" style="stroke:var(--r2)" stroke-width="1.5"/></svg>',STAR='<svg viewBox="0 0 26 26"><path d="M13 1L15.8 9.4H24.6L17.5 14.6L20.3 23L13 17.8L5.7 23L8.5 14.6L1.4 9.4H10.2Z" fill="#f6c15c" style="stroke:var(--r2)" stroke-width="1"/></svg>';
-function deco(){const d=el('div','deco');d.innerHTML='<div class="sc top"></div><div class="sc bot"></div><div class="fl f1">'+FL+'</div><div class="fl f2">'+FL+'</div><div class="fl f3">'+FL+'</div><div class="stt">'+STAR+'</div>';return d}
-function divider(){const d=el('div','dv');d.innerHTML=STAR.replace('<svg','<svg')+FL.replace('<svg','<svg');return d}
 const $=id=>document.getElementById(id);
-function load(){try{const v=localStorage.getItem(KEY);if(v)return JSON.parse(v)}catch(e){}return null}
-const _l=load();S=(_l&&_l.v===DEF.v)?_l:JSON.parse(JSON.stringify(DEF));
-function status(t){$('status').textContent=t}
-function save(manual){try{localStorage.setItem(KEY,JSON.stringify(S));status((manual?'Đã lưu ✓ ':'Tự động lưu ✓ ')+new Date().toLocaleTimeString('vi-VN'))}catch(e){status('Không lưu được (bộ nhớ đầy?). Hãy dùng Sao lưu JSON.')}}
-function dirty(){status('Đang lưu…');clearTimeout(timer);timer=setTimeout(()=>save(false),600)}
 function el(t,c,txt){const e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e}
-function editable(node,get,set){node.contentEditable=edit;node.addEventListener('input',()=>{set(node.innerText.replace(/\n$/,''));dirty()});return node}
+function deco(){const d=el('div','deco');d.innerHTML='<div class="sc top"></div><div class="sc bot"></div><div class="fl f1">'+FL+'</div><div class="fl f2">'+FL+'</div><div class="fl f3">'+FL+'</div><div class="stt">'+STAR+'</div>';return d}
+function divider(){const d=el('div','dv');d.innerHTML=STAR+FL;return d}
 function renderCover(){
- const c=$('cover');c.innerHTML='';c.append(deco());
- c.append(editable(el('h1','hand',S.title),0,v=>S.title=v),editable(el('div','sub',S.sub),0,v=>S.sub=v));
+ const c=$('cover');c.innerHTML='';c.append(deco(),el('h1','hand',S.title),el('div','sub',S.sub));
  S.groups.forEach((g,gi)=>{
-  const sec=el('div','sec'),box=el('div','box');
-  const st=el('div','st hand');st.append(el('span','', '♥ '),editable(el('span','',g.title),0,v=>g.title=v));
+  const sec=el('div','sec'),box=el('div','box'),st=el('div','st hand','♥ '+g.title);
   g.items.forEach((it,ii)=>{
-   const r=el('div','row');r.append(el('span','b','♥'));
-   const lb=editable(el('span','lb',it.label),0,v=>it.label=v);r.append(lb);
-   const x=el('span','x','✕');x.onclick=e=>{e.stopPropagation();if(confirm('Xoá mục này?')){g.items.splice(ii,1);dirty();renderCover()}};r.append(x);
-   r.onclick=()=>{if(!edit)openDetail(gi,ii)};box.append(r)});
-  const add=el('button','ghost','+ Mục');add.onclick=()=>{g.items.push({label:'Mục mới',pages:[{text:'',img:''}]});dirty();renderCover()};
-  const gd=el('span','x gd','✕');gd.onclick=()=>{if(confirm('Xoá cả nhóm?')){S.groups.splice(gi,1);dirty();renderCover()}};
-  sec.append(st,box,add,gd);c.append(sec);if(gi<S.groups.length-1)c.append(divider())});
- const ag=el('button','ghost','+ Thêm nhóm');ag.onclick=()=>{S.groups.push({title:'Nhóm mới:',items:[{label:'Mục mới',pages:[{text:'',img:''}]}]});dirty();renderCover()};
- c.append(ag,editable(el('div','foot',S.foot),0,v=>S.foot=v));
+   const r=el('div','row');r.append(el('span','b','♥'),el('span','lb',it.label));
+   r.onclick=()=>openDetail(gi,ii);box.append(r)});
+  sec.append(st,box);c.append(sec);if(gi<S.groups.length-1)c.append(divider())});
+ c.append(el('div','foot',S.foot));
 }
 function renderDetail(){
  const it=S.groups[cur[0]].items[cur[1]],d=$('detail');d.innerHTML='';
- const back=el('button','nav back','←');back.onclick=()=>{$('detail').classList.remove('on');$('cover').classList.add('on');renderCover()};
- const t=editable(el('div','dt',it.label),0,v=>it.label=v);
+ const back=el('button','nav back','←');
+ back.onclick=()=>{$('detail').classList.remove('on');$('cover').classList.add('on')};
  const p=it.pages[pi],pg=el('div','pg');
- pg.append(editable(el('div','pt',p.text),0,v=>p.text=v));
+ pg.append(el('div','pt',p.text));
  if(p.img){const im=new Image();im.src=p.img;pg.append(im)}
- const ctl=el('div','ctl'),pv=el('button','nav','‹'),nx=el('button','nav','›'),dots=el('span','dots');
- pv.disabled=pi==0;nx.disabled=pi==it.pages.length-1;
- pv.onclick=()=>{pi--;renderDetail()};nx.onclick=()=>{pi++;renderDetail()};
- it.pages.forEach((_,i)=>dots.append(el('i',i==pi?'on':'')));ctl.append(pv,dots,nx);
- const acts=el('div','acts'),bi=el('button','','🖼️ Thêm ảnh'),bri=el('button','','Xoá ảnh'),bp=el('button','','+ Thêm trang'),bd=el('button','','Xoá trang');
- const inp=document.createElement('input');inp.type='file';inp.accept='image/*';inp.hidden=true;
- bi.onclick=()=>inp.click();inp.onchange=()=>shrink(inp.files[0],u=>{p.img=u;dirty();renderDetail()});
- bri.onclick=()=>{p.img='';dirty();renderDetail()};
- bp.onclick=()=>{it.pages.splice(pi+1,0,{text:'',img:''});pi++;dirty();renderDetail()};
- bd.onclick=()=>{if(it.pages.length>1&&confirm('Xoá trang này?')){it.pages.splice(pi,1);pi=Math.max(0,pi-1);dirty();renderDetail()}};
- acts.append(bi,bri,bp,bd,inp);d.append(deco(),back,t,divider(),pg,ctl,acts);
+ d.append(deco(),back,el('div','dt',it.label),divider(),pg);
+ if(it.pages.length>1){
+  const ctl=el('div','ctl'),pv=el('button','nav','‹'),nx=el('button','nav','›'),dots=el('span','dots');
+  pv.disabled=pi==0;nx.disabled=pi==it.pages.length-1;
+  pv.onclick=()=>{pi--;renderDetail()};nx.onclick=()=>{pi++;renderDetail()};
+  it.pages.forEach((_,i)=>dots.append(el('i',i==pi?'on':'')));
+  ctl.append(pv,dots,nx);d.append(ctl);
+ }
 }
-function shrink(f,cb){if(!f)return;const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const s=Math.min(1,700/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=im.width*s;c.height=im.height*s;c.getContext('2d').drawImage(im,0,0,c.width,c.height);cb(c.toDataURL('image/jpeg',.8))};im.src=r.result};r.readAsDataURL(f)}
 function openDetail(g,i){cur=[g,i];pi=0;renderDetail();$('cover').classList.remove('on');$('detail').classList.add('on')}
-$('bEdit').onclick=()=>{edit=!edit;document.body.classList.toggle('edit',edit);$('bEdit').textContent=edit?'✅ Xong':'✏️ Chỉnh sửa';
- document.querySelector('.nb').classList.toggle('edit',edit);
- document.querySelectorAll('[contenteditable]').forEach(e=>e.contentEditable=edit);if(!edit)save(true)};
-$('bSave').onclick=()=>save(true);
-$('bBk').onclick=()=>{$('ta').value=JSON.stringify(S,null,1);$('ov').style.display='flex'};
-$('bClose').onclick=()=>$('ov').style.display='none';
-$('bCopy').onclick=()=>{$('ta').select();try{navigator.clipboard.writeText($('ta').value)}catch(e){document.execCommand('copy')}};
-$('bImp').onclick=()=>{try{const v=JSON.parse($('ta').value);if(!v.groups)throw 0;v.v=DEF.v;S=v;save(true);renderCover();$('ov').style.display='none'}catch(e){alert('JSON không hợp lệ')}};
-$('bReset').onclick=()=>{if(confirm('Xoá hết và khôi phục mặc định?')){S=JSON.parse(JSON.stringify(DEF));save(true);renderCover();$('ov').style.display='none'}};
-document.head.insertAdjacentHTML('beforeend','<style id="rt">.edit .x{display:inline}.edit .ghost{display:block}.edit .acts{display:flex}</style>');
-$('bPub').onclick=()=>{
- const d=JSON.parse(JSON.stringify(S));d.v=Date.now();
- const c=document.documentElement.cloneNode(true);
- c.querySelector('.nb').classList.remove('edit');c.querySelector('body').classList.remove('edit');
- c.querySelector('#cover').innerHTML='';c.querySelector('#detail').innerHTML='';
- c.querySelector('#cover').className='sheet on';c.querySelector('#detail').className='sheet';
- c.querySelector('#ov').style.display='none';c.querySelector('#ta').textContent='';
- const rt=c.querySelector('#rt');if(rt)rt.remove();
- const sc=c.querySelector('#app'),json=JSON.stringify(d).replace(/</g,'\\u003c');
- sc.textContent=sc.textContent.replace(/\/\*DEF_START\*\/[\s\S]*?\/\*DEF_END\*\//,()=>'/*DEF_'+'START*/const DEF='+json+';/*DEF_'+'END*/');
- const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['<!DOCTYPE html>\n'+c.outerHTML],{type:'text/html'}));
- a.download='index.html';document.body.appendChild(a);a.click();a.remove();
- status('Đã tải index.html, hãy đăng file này lên GitHub');
-};
-renderCover();if(load())status('Đã tải dữ liệu đã lưu');
+renderCover();
 </script></body></html>
